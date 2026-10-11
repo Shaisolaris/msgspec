@@ -322,7 +322,9 @@ type parameter syntax (<code class="docutils literal notranslate"><span class="p
 same-named module-level <code class="docutils literal notranslate"><span class="pre">TypeVar</span></code> from shadowing the PEP 695 type parameter,
 which could silently affect decoding on Python 3.12+ (<a class="extlink-pr reference external" href="https://github.com/msgspec/msgspec/pull/1130">PR #1130</a>).</p></li>
 <li><p>Fix a typing false negative that allowed assigning attributes
-to <code class="docutils literal notranslate"><span class="pre">READONLY</span></code> and C level getters</p></li>
+to <code class="docutils literal notranslate"><span class="pre">READONLY</span></code> and C level getters (<a class="extlink-pr reference external" href="https://github.com/msgspec/msgspec/pull/1244">PR #1244</a>)</p></li>
+<li><p>Support <code class="docutils literal notranslate"><span class="pre">TypeForm[]</span></code> type instead of <code class="docutils literal notranslate"><span class="pre">Type[]</span></code> in decoders,
+requires <code class="docutils literal notranslate"><span class="pre">mypy&gt;=2.1</span></code> (<a class="extlink-pr reference external" href="https://github.com/msgspec/msgspec/pull/1245">PR #1245</a>)</p></li>
 </ul>
 </section>
 <section id="version-0-22-0-2026-09-29">
